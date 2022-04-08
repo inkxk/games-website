@@ -11,7 +11,7 @@
 		"type:check": "tsc",
 		"lint:ts": "eslint './src/**/*.{tsx,ts}'",
 		"lint:css": "stylelint './src/**/*.styles.ts'",
-		"lint": "npm lint:ts && npm lint:css"
+		"lint": "npx lint:ts && npx lint:css"
 	},
 	"husky": {
 		"hooks": {
@@ -21,7 +21,7 @@
 	"lint-staged": {
 		"*.{tsx,ts}": [
 			"prettier --write",
-			"npm lint"
+			"npx lint"
 		]
 	},
 	"dependencies": {
