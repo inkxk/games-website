@@ -21,11 +21,14 @@
 		"noFallthroughCasesInSwitch": true,
 		"moduleResolution": "node",
 		"allowSyntheticDefaultImports": true,
-		"declaration": true,
 		"isolatedModules": true,
 		"noEmit": true,
-		"esModuleInterop": true
+		"esModuleInterop": true,
+		"baseUrl": ".",
+		"paths": {
+			"*": ["node_modules", "src/*"]
+		}
 	},
-	"include": ["src/**/*"],
+	"include": ["src/**/*", "types/**/*"],
 	"exclude": ["node_modules", "**/*.spec.ts", "*/*.test.ts"]
 }
