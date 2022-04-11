@@ -27,6 +27,7 @@
 	"dependencies": {
 		"@babel/polyfill": "^7.12.1",
 		"axios": "^0.26.1",
+		"core-js": "^3.21.1",
 		"react": "^18.0.0",
 		"react-dom": "^18.0.0",
 		"react-router-dom": "^6.3.0",

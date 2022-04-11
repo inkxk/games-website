@@ -11,7 +11,7 @@ const GameListRender = ({ err, games }: Props): ReactElement => {
 	if (err) {
 		return <p>Unable to fetch games</p>
 	}
-	if (games?.length) {
+	if (!games?.length) {
 		return <p>No games available</p>
 	}
 	return (
